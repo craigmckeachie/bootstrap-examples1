@@ -4,49 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Examples</title>
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <style></style>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <style>
+      main {
+        height: 100vh;
+      }
+      .btn-primary {
+        background-color: #438e96;
+      }
+    </style>
   </head>
   <body>
-    <header class="p-3 text-bg-dark">
+    <header class="p-3 text-bg-light">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
             <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
               <use xlink:href="#bootstrap" />
             </svg>
           </a>
 
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            <li><a href="#" class="nav-link px-2 text-dark">Home</a></li>
+            <li><a href="#" class="nav-link px-2 text-dark">Features</a></li>
+            <li><a href="#" class="nav-link px-2 text-dark">Pricing</a></li>
+            <li><a href="#" class="nav-link px-2 text-dark">FAQs</a></li>
+            <li><a href="#" class="nav-link px-2 text-dark">About</a></li>
           </ul>
 
           <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
             <input
               type="search"
-              class="form-control form-control-dark text-bg-dark"
+              class="form-control form-control-light text-bg-light"
               placeholder="Search..."
               aria-label="Search"
             />
           </form>
 
           <div class="text-end">
-            <button type="button" class="btn btn-outline-light me-2">Login</button>
-            <button type="button" class="btn btn-warning">Sign-up</button>
+            <button type="button" class="btn btn-outline-dark me-2">Login</button>
+            <button type="button" class="btn btn-primary">Sign-up</button>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <div class="container"></div>
+      <div class="container">
+        <figure class="m-4">
+          <img class="img-fluid" src="http://placehold.co/1200x300/92cace/FFFFFF" alt="" />
+        </figure>
+        <div class="d-flex mt-4 flex-row g-2">
+          <section class="m-4">
+            <h3>Story</h3>
+            <p class="fw-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consectetur accusantium, quo officia ea vel
+              est? Id iure delectus porro sunt, nisi corrupti, provident repellat perferendis blanditiis non quibusdam
+              aliquid et quod enim sapiente quaerat suscipit officiis earum libero architecto voluptatibus vero illo
+              reiciendis! Commodi non nulla pariatur voluptate, modi doloribus voluptas! Quasi explicabo suscipit at
+              consequatur ut enim eligendi totam, fugit eos consectetur nesciunt doloribus et vero recusandae quas
+              dolores sint, id repudiandae ipsa dignissimos amet adipisci? Facere distinctio repudiandae optio qui
+              quidem alias eius eum totam, iusto, nostrum tempore consectetur? Quidem doloremque ex exercitationem
+              consectetur nobis quae iure.
+            </p>
+          </section>
+          <section class="m-4">
+            <h3>Story</h3>
+            <p class="fw-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consectetur accusantium, quo officia ea vel
+              est? Id iure delectus porro sunt, nisi corrupti, provident repellat perferendis blanditiis non quibusdam
+              aliquid et quod enim sapiente quaerat suscipit officiis earum libero architecto voluptatibus vero illo
+              reiciendis! Commodi non nulla pariatur voluptate, modi doloribus voluptas! Quasi explicabo suscipit at
+              consequatur ut enim eligendi totam, fugit eos consectetur nesciunt doloribus et vero recusandae quas
+              dolores sint, id repudiandae ipsa dignissimos amet adipisci? Facere distinctio repudiandae optio qui
+              quidem alias eius eum totam, iusto, nostrum tempore consectetur? Quidem doloremque ex exercitationem
+              consectetur nobis quae iure.
+            </p>
+          </section>
+        </div>
+      </div>
     </main>
 
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top text-bg-light">
+      <div class="container">
         <div class="col-md-4 d-flex align-items-center">
           <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
             <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap" /></svg>
@@ -71,8 +110,8 @@
             </a>
           </li>
         </ul>
-      </footer>
-    </div>
+      </div>
+    </footer>
 
     <script src="scripts/bootstrap.bundle.js"></script>
   </body>
